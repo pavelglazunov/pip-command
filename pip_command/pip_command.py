@@ -3,6 +3,10 @@ import pkg_resources
 from os import system as sm
 
 
+def freeze(requirements_file="requirements.txt"):
+    sm(f"pip freeze > {requirements_file}")
+
+
 def inspect():
     sm("pip inspect > inspect.txt")
     with open("inspect.txt") as file:
