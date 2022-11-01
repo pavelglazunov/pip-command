@@ -11,5 +11,12 @@ setup(
     author="pavelgs",
     author_email="p6282813@yandex.ru",
 
-    description=""
+    description="lib for fast work with pip commands",
+    long_description="README.md",
+
+    url="https://github.com/pavelglazunov/pip-command",
+
+    license="Apache License, Version 2.0, see LICENSE file",
+
+    packages=["pip_command"]
 )
