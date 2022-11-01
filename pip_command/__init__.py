@@ -1,4 +1,5 @@
 from .pip_command import *
+from .pip_insatll import *
 
 __author__ = "pavelgs"
 __version__ = "0.0.1"

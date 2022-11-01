@@ -1,1 +1,3 @@
-pip_command/.idea/
+.idea/
+dist/
+pip_command.egg-info/
