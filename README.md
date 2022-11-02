@@ -8,42 +8,66 @@
 ***
 
 
-<h3>install | installs | install_requirements</h3>
+<h3>install — installs — install_requirements</h3>
 
- * install - установка библиотеки
- * installs - установка нескольких библиотек
- * install_requirements - установка requirements.txt
+<code>install</code> - установка библиотеки<br>
+Параметр <code>version</code> отвечает за версию библиотеки, изначально None - последняя версия
+
+<code>installs</code> - установка нескольких библиотек
+
+<code>install_requirements</code> - установка requirements.txt
+
+
 ```python
 from pip_command import install, installs, install_requirements
 
-install("requests", version="2.25.1")  # установка библиотеки requests
+install("requests")  # установка библиотеки requests
+install("requests", version="2.25.1")  # установка библиотеки requests версии 2.25.1
 installs("requests", "bs4")  # установка библиотек requests и bs4
 install_requirements("requirements.txt")  # установка библиотек из файла requirements.txt
 ```
 
-<h3>update</h3>
+<h2>update | update | update_requirements</h2>
 
- * update - обновление библиотеки
+<code>update</code> - обновление библиотеки 
+
+<code>updates</code> - обновление нескольких библиотек
+
+<code>update_requirements</code> - обновление библиотек по файлу requirements.txt
 
 ```python
 from pip_command import update
 
 update("requests")  # обновляет requests до последней версии
+update("requests", "bs4")  # обновляет requests и bs4 до последней версии
 ```
 
-<h3>uninstall | uninstall_requirements</h3>
+<h2>uninstall | uninstalls | uninstall_requirements</h2>
 
- * uninstall - удаление библиотеки
- * uninstall_requirements - удаление библиотек по requirements.txt
+<code>uninstall</code> - удаление библиотеки
+
+<code>uninstalls</code> - удаление нескольких библиотек
+
+<code>uninstall_requirements</code> - удаление библиотек по requirements.txt
 
 
 ```python
-from pip_command import uninstall, uninstall_requirements
+from pip_command import uninstall, uninstalls, uninstall_requirements
 
 uninstall("requests")  # удаление библиотеки requests
+uninstalыl("requests", "bs4")  # удаление библиотек requests и bs4
 uninstall_requirements("requirements.txt")  # удаление библиотек из файла requirements.txt
 ```
 
-[//]: # (<h3>freeze</h3>)
-[//]: # ()
-[//]: # (Функция freeze&#40;requirements_file&#41; создает файл формата requirements.txt)
+<h2>freeze</h2>
+
+<code>freeze</code> - создание файла формата requirements.txt
+  
+Параметр <code>requirements_file</code> отвечает за название создаваемого файла, изначально:  requirements.txt
+
+```python
+from pip_command import freeze
+
+freeze()  # создание файла requirements.txt
+freeze("file_name.txt")  # создание файла формата requirements.txt с названием file_name.txt
+```
