@@ -23,6 +23,7 @@ install_requirements("requirements.txt")  # установка библиоте�
 
 <h3>update</h3>
  * update - обновление библиотеки
+
 ```python
 from pip_command import update
 
