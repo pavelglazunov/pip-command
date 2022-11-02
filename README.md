@@ -8,7 +8,7 @@
 ***
 
 
-<h3>install — installs — install_requirements</h3>
+<h2>install | installs | install_requirements</h2>
 
 <code>install</code> - установка библиотеки<br>
 Параметр <code>version</code> отвечает за версию библиотеки, изначально None - последняя версия
