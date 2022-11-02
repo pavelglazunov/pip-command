@@ -33,6 +33,8 @@ update("requests")  # обновляет requests до последней вер
 
  * uninstall - удаление библиотеки
  * uninstall_requirements - удаление библиотек по requirements.txt
+
+
 ```python
 from pip_command import uninstall, uninstall_requirements
 
