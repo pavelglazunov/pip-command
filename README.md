@@ -55,7 +55,7 @@ update("requests", "bs4")  # обновляет requests и bs4 до после�
 from pip_command import uninstall, uninstalls, uninstall_requirements
 
 uninstall("requests")  # удаление библиотеки requests
-uninstalыl("requests", "bs4")  # удаление библиотек requests и bs4
+uninstalls("requests", "bs4")  # удаление библиотек requests и bs4
 uninstall_requirements("requirements.txt")  # удаление библиотек из файла requirements.txt
 ```
 
