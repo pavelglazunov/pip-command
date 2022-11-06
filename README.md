@@ -71,3 +71,26 @@ from pip_command import freeze
 freeze()  # создание файла requirements.txt
 freeze("file_name.txt")  # создание файла формата requirements.txt с названием file_name.txt
 ```
+
+
+<h2>plist</h2>
+
+<code>plist</code> - возвращает список всех установленных библиотек
+
+```python
+from pip_command import plist
+
+print(plist())  # >> ["requests", "bs4]
+```
+
+
+<h2>inspect</h2>
+
+<code>inspect</code> - возвращает инспекцию среды python
+
+```python
+from pip_command import inspect
+
+print(inspect())  # >> 
+```
+
